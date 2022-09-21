@@ -1,4 +1,3 @@
-from asyncio.windows_events import NULL
 import speech_recognition as sr
 import googletrans
 from colorama import *
