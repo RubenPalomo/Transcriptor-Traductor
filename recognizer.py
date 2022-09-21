@@ -5,13 +5,11 @@ from colorama import *
 exit = False
 
 def transcription():
-    r = sr.Recognizer()
-
     with sr.Microphone() as source:
         print(Fore.YELLOW + "Listening...")
-        audio = r.listen(source)
+        audio = sr.Recognizer().listen(source)
         try:
-            transcription = r.recognize_google(audio, language="en-EN")
+            transcription = sr.Recognizer().recognize_google(audio, language="en-EN")
             return transcription            
         except:
             return 
