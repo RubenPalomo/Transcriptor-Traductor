@@ -1,6 +1,7 @@
 import speech_recognition as sr
 import googletrans
-import colorama
+from colorama import *
+
 
 exit = False
 
