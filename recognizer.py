@@ -2,7 +2,6 @@ import speech_recognition as sr
 import googletrans
 from colorama import *
 
-
 exit = False
 
 def transcription():
