@@ -5,7 +5,7 @@ from colorama import *
 
 exit = False
 
-# Function to transcribe the audio
+# Function to transcribe the audio to a string using Google
 async def transcription(audio):
     try:
         transcription = sr.Recognizer().recognize_google(audio, language="en-EN")
@@ -13,11 +13,12 @@ async def transcription(audio):
     except:
         print() 
 
-# Function to translate
+# Function to translate the string using Google
 def translation(string):
     translator = googletrans.Translator()
     return translator.translate(string, dest='es').text
 
+#Function to print all the results and change the boolean exit
 def print_result(text):
     if (text):
         print(Fore.GREEN + text)
@@ -26,11 +27,11 @@ def print_result(text):
             global exit
             exit = True
 
+# Function to capture audio
 def microphone():
     with sr.Microphone() as source:
         audio = sr.Recognizer().listen(source)
         return(audio)
-
 
 async def main():
     while(not exit):
