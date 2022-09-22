@@ -5,21 +5,23 @@ from colorama import *
 
 exit = False
 
+# Function to transcribe the audio
 async def transcription(audio):
     try:
         transcription = sr.Recognizer().recognize_google(audio, language="en-EN")
-        aux(transcription)
+        print_result(transcription)
     except:
         print() 
 
-def traduction(string):
+# Function to translate
+def translation(string):
     translator = googletrans.Translator()
     return translator.translate(string, dest='es').text
 
-def aux(text):
+def print_result(text):
     if (text):
         print(Fore.GREEN + text)
-        print(Fore.BLUE + traduction(text) + "\n")
+        print(Fore.BLUE + translation(text) + "\n")
         if (text == "exit"):
             global exit
             exit = True
