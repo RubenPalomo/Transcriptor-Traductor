@@ -5,7 +5,9 @@ español, mostrando ambos textos. Su funcionamiento es el siguiente:<br>
 1. El programa entra en un bucle en el que está escuchando constantemente (hasta que el usuario diga *"exit"*).
 2. Esto va generando un archivo de audio que es transformado en una *string* mediante el conversor de Google.
 3. Esta *string* es mandada a consola. También es mandada la cadena traducida por el traductor de Google.
-4. Se repite el proceso hasta que el usuario diga *"exit"*.<br>
+4. Se repite el proceso hasta que el usuario diga *"exit"*.
+<br>
+
 **EN** - Python program that listens in a loop through the device's microphone. At each pause, the program will transcribe what has just been said and translate it into
 Spanish, showing both texts. Its operation is as follows:<br>
 1. The program goes into a loop where it is constantly listening (until the user says "exit").
