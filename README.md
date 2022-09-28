@@ -1,5 +1,6 @@
 # Transcriptor/Traductor
 
+![Logo Python](https://img.shields.io/pypi/pyversions/Django?color=w&logo=python&logoColor=yellow)<br>
 **SPA** - Programa en Python que escucha en bucle por el micrófono del dispositivo. En cada pausa, el programa transcribirá lo que se acaba de decir y lo traducirá al
 español, mostrando ambos textos. Su funcionamiento es el siguiente:<br>
 1. El programa entra en un bucle en el que está escuchando constantemente (hasta que el usuario diga *"exit"*).
